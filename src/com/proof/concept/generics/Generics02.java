@@ -9,20 +9,27 @@ public class Generics02 {
     static Boolean[] booleans = {true, false, true};
 
     public static void main(String[] args) {
-        arrayToList(characters);
-        arrayToList(integers);
-        arrayToList(booleans);
+        List<Character> charList = arrayToList(characters);
+        List<Boolean> booleanList = arrayToList(booleans);
+        List<Integer> intList = arrayToList(integers);
+        System.out.println(intList.get(0)); //throws ClassCastException
     }
-
+    /*
     public static List arrayToList(Object[] array){
         List<Object> list = new ArrayList<>();
-
-        for (Object o:array) {
+        for (Object o : array) {
             list.add(o);
         }
+        // list.forEach(x -> System.out.println(x));
+        return list;
+    }*/
 
-        list.forEach(x -> System.out.println(x));
-
+    public static <T> List<T> arrayToList(T[] array){
+        List<T> list = new ArrayList<>();
+        for (T o:array) {
+            list.add(o);
+        }
+        // list.forEach(x -> System.out.println(x));
         return list;
     }
 }
