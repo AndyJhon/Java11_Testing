@@ -3,6 +3,9 @@ package com.proof.concept.generics;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * T variables and T Classes
+ */
 public class Generics02 {
     static Character[] characters = {'h','e','l','l','o'};
     static Integer[] integers = {1, 2, 3, 4, 5};

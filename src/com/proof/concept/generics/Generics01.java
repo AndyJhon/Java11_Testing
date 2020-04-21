@@ -3,6 +3,9 @@ package com.proof.concept.generics;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Generics
+ */
 public class Generics01 {
     public static void main (String[] args) {
         List names = new ArrayList();
