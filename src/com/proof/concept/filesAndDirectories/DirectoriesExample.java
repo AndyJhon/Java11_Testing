@@ -29,7 +29,6 @@ public class DirectoriesExample {
         System.out.println(path.getFileName());
         Files.deleteIfExists(path);
 
-
         Path path1 = Paths.get("home\\andyjhonvr\\Desktop\\myTestFile");
         Path path2 = Paths.get("home\\andyjhonvr\\Desktop\\myTestFile2");
 
